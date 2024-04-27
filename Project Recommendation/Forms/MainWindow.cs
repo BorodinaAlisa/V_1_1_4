@@ -66,7 +66,7 @@ namespace design
             if (I >= 0 && I < DictRecom!.Count)
             {
 
-
+                // Оптимизировать
                 var sortDict = from pair in DictRecom orderby pair.Value descending select pair;
                 var sortList = new List<int>();
                 foreach (var pair in sortDict)
@@ -160,7 +160,7 @@ namespace design
             AddBlackListButton.FlatAppearance.BorderSize = 0;
             AddBlackListButton.FlatStyle = FlatStyle.Flat;
         }
-
+        // Убрать весь хардкод 
         private void ProfileButton_Click(object sender, EventArgs e)
         {
             var profile = new Profile(Email!);

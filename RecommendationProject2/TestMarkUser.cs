@@ -32,7 +32,8 @@ namespace UnitTestRecommendationProject
                 context.SaveChanges();
                 var mark = new MarkWindow();
                 mark.IdRealty = 1;
-                mark.MarkInDb(5);
+                mark.ValueMark = 5;
+                mark.MarkInDb();
                 var tableR = context.Realtys.FirstOrDefault(r => r.Id == mark.IdRealty);
                 Assert.That(tableR!.Mark == 5, Is.True);
             }

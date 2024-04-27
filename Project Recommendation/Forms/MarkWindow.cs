@@ -1,10 +1,12 @@
 ﻿using DB_993.Classes;
+using System.Threading.Tasks;
 
 namespace design
 {
     public partial class MarkWindow : Form
     {
         public int IdRealty { get; set; }
+        public int ValueMark { get; set; }
         public MarkWindow()
         {
             InitializeComponent();
@@ -62,12 +64,12 @@ namespace design
             Star55.FlatStyle = FlatStyle.Flat;
         }
 
-        public void MarkInDb(int mark)
+        public void MarkInDb()
         {
-            using (var context = new DB_993.Classes.ApplicationContextBD())
+            using (var context = new ApplicationContextBD())
             {
                 var markInRealty = context.Realtys.FirstOrDefault(m => m.Id == IdRealty);
-                markInRealty!.Mark = mark;            
+                markInRealty!.Mark = ValueMark;
                 context.SaveChanges();
 
             }
@@ -75,20 +77,20 @@ namespace design
 
         private void Star1_Click(object sender, EventArgs e)
         {
-            MarkInDb(0);
+            ValueMark = 0;
             Star1.Hide();
         }
 
         private void Star2_Click(object sender, EventArgs e)
         {
-            MarkInDb(2);
+            ValueMark = 2;
             Star1.Hide();
             Star2.Hide();
         }
 
         private void Star3_Click(object sender, EventArgs e)
         {
-            MarkInDb(3);
+            ValueMark = 3;
             Star1.Hide();
             Star2.Hide();
             Star3.Hide();
@@ -96,7 +98,7 @@ namespace design
 
         private void Star4_Click(object sender, EventArgs e)
         {
-            MarkInDb(4);
+            ValueMark = 4;
             Star1.Hide();
             Star2.Hide();
             Star3.Hide();
@@ -105,12 +107,23 @@ namespace design
 
         private void Star5_Click(object sender, EventArgs e)
         {
-            MarkInDb(5);
+            ValueMark = 5;
             Star1.Hide();
             Star2.Hide();
             Star3.Hide();
             Star4.Hide();
             Star5.Hide();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            MarkInDb();
+            this.Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

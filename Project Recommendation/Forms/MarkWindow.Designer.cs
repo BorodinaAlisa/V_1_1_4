@@ -131,6 +131,7 @@
             SaveButton.ForeColor = Color.DimGray;
             SaveButton.Name = "SaveButton";
             SaveButton.UseVisualStyleBackColor = false;
+            SaveButton.Click += SaveButton_Click;
             // 
             // CancelButton
             // 
@@ -139,6 +140,7 @@
             CancelButton.ForeColor = Color.DimGray;
             CancelButton.Name = "CancelButton";
             CancelButton.UseVisualStyleBackColor = false;
+            CancelButton.Click += CancelButton_Click;
             // 
             // MarkWindow
             // 
