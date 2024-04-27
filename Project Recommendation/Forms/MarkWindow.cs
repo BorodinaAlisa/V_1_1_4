@@ -65,7 +65,7 @@ namespace design
 
         public void MarkInDb(int mark)
         {
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var markInRealty = context.Realtys.FirstOrDefault(m => m.Id == IdRealty);
                 markInRealty!.Mark = mark;            

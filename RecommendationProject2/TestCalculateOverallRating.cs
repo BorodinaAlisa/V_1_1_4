@@ -10,7 +10,7 @@ namespace UnitTestRecommendationProject
         [Test]
         public void CalculateOverallRatingMethod()
         {
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var listR = new List<Realty>();
                 var newRealrt1 = new Realty

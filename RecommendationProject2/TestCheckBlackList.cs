@@ -11,7 +11,7 @@ namespace UnitTestRecommendationProject
         public void TestCheckBlackListMethod()
         {
             MainWindow mainWindow = new MainWindow();
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var newBL = new BlackListTable
                 {

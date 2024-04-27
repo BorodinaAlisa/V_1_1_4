@@ -52,7 +52,7 @@ namespace design
 
         private void LoadUserData()
         {
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
 
                 var user = context.Users.FirstOrDefault(user => user.Email == Email_);
@@ -78,7 +78,7 @@ namespace design
                 return;
             }
 
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
 
                 var existingUser = context.Users.FirstOrDefault(user => user.Email == EmailText.Text && user.Email != Email_);

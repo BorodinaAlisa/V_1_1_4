@@ -45,7 +45,7 @@ namespace design
                 return;
             }
 
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var existingUser = context.Users.FirstOrDefault(user => user.Email == LoginRegText.Text);
                 if (existingUser != null)

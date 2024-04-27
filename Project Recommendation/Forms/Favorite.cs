@@ -45,7 +45,7 @@ namespace design
 
         private void FillTableFavourites()
         {
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var existingUser = context.Favourites.FirstOrDefault(fav => fav.Id_Realty == IdRealryForFav);
                 if (existingUser != null)
@@ -63,7 +63,7 @@ namespace design
         }
         private void LoadData()
         {
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var imageList = new ImageList();
                 imageList.ImageSize = new Size(100, 100);
@@ -94,7 +94,7 @@ namespace design
         private void BlackListButton_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            using (var context = new DB_993.Classes.ApplicationContextDB())
+            using (var context = new DB_993.Classes.ApplicationContextBD())
             {
                 var fav = context.Favourites.ToList();
                 for (int i = 0; i < fav!.Count; i++)

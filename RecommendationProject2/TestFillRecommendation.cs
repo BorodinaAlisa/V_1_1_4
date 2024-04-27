@@ -15,7 +15,7 @@ namespace UnitTestRecommendationProject
         [Test]
         public void TestFillListRecommendationMethod()
         {
-            using (var conext = new DB_993.Classes.ApplicationContextDB())
+            using (var conext = new DB_993.Classes.ApplicationContextBD())
             {
                 var listR = new List<Realty>();
                 var newRealrt1 = new Realty
