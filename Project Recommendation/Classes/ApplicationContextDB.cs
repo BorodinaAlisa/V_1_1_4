@@ -2,7 +2,7 @@
 
 namespace DB_993.Classes
 {
-    public class ApplicationContex : DbContext
+    public class ApplicationContextDB : DbContext
     {
         public DbSet<User> Users { get; set; } = null!;
         public DbSet<Realty> Realtys { get; set; } = null!;

@@ -9,7 +9,7 @@ namespace UnitTestRecommendationProject
         [Test]
         public void GetRecommendationTest()
         {
-            using (var context = new ApplicationContex())
+            using (var context = new DB_993.Classes.ApplicationContextDB())
             {
                 var listR = new List<Realty>();
                 var newRealrt1 = new Realty
