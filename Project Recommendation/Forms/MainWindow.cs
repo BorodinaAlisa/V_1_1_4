@@ -8,7 +8,7 @@ namespace design
         string? Email { get; set; }
         public int I { get; set; }
         int IdRealryForFavBlMark { get; set; }
-        Dictionary<int, decimal>? DictRecom { get; set; }
+        public Dictionary<int, decimal>? DictRecom { get; set; }
         public MainWindow()
         {
             InitializeComponent();
