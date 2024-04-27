@@ -1,4 +1,5 @@
 ﻿using DB_993.Classes;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace design
 {
@@ -18,6 +19,14 @@ namespace design
         {
             InitializeComponent();
             Design();
+            FullListRecommendation(getRecommendation);
+            FillRecommendation();
+        }
+        public MainWindow(GetRecommendation getRecommendation, string email)
+        {
+            InitializeComponent();
+            Design();
+            Email = email;
             FullListRecommendation(getRecommendation);
             FillRecommendation();
         }
@@ -173,7 +182,7 @@ namespace design
 
         private void FormMyRecommendationButton_Click(object sender, EventArgs e)
         {
-            var testFirstWindow = new TestFirstWindow();
+            var testFirstWindow = new TestFirstWindow(Email!);
             testFirstWindow.Show();
         }
 
@@ -199,7 +208,7 @@ namespace design
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            if (DictRecom != null)
+            if (DictRecom != null && CheckStringEmpty())
             {
                 if (I-- > 0)
                 {
@@ -212,7 +221,7 @@ namespace design
 
         private void AddFavButton_Click(object sender, EventArgs e)
         {
-            if (DictRecom != null)
+            if (DictRecom != null && CheckStringEmpty())
             {
                 var favourites = new Favorite(IdRealryForFavBlMark);
             }
@@ -220,7 +229,7 @@ namespace design
 
         private void AddBlackListButton_Click(object sender, EventArgs e)
         {
-            if (DictRecom != null)
+            if (DictRecom != null && CheckStringEmpty())
             {
                 var favourites = new BlackList(IdRealryForFavBlMark);
             }
@@ -234,11 +243,24 @@ namespace design
 
         private void EstimateButton_Click(object sender, EventArgs e)
         {
-            if (DictRecom != null)
+            if (DictRecom != null && CheckStringEmpty())
             {
                 var mark = new MarkWindow(IdRealryForFavBlMark);
                 mark.Show();
             }
+        }
+        public bool CheckStringEmpty()
+        {
+            if(RealtyPhoto.Image == null || AddressText.Text == null || PriceText.Text == null 
+                || FloorText.Text == null || SquareText.Text == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
         }
     }
 }

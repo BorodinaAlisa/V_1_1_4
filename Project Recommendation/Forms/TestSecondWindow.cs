@@ -5,6 +5,7 @@ namespace design
 {
     public partial class TestSecondWindow : Form
     {
+        string? Email {  get; set; }
         string? PurposeCombo { get; set; }
         string? RealtyCombo { get; set; }
         string? TownCombo { get; set; }
@@ -13,6 +14,22 @@ namespace design
         {
             InitializeComponent();
             Design();
+        }
+        public TestSecondWindow(string email)
+        {
+            InitializeComponent();
+            Design();
+            Email = email;
+        }
+        public TestSecondWindow(string townCombo, string realtyCombo, string purposeCombo, string email)
+        {
+            InitializeComponent();
+            Design();
+            Email = email;
+            TownCombo = townCombo;
+            RealtyCombo = realtyCombo;
+            PurposeCombo = purposeCombo;
+            FillPicture();
         }
 
         public TestSecondWindow(string townCombo, string realtyCombo, string purposeCombo)
@@ -413,7 +430,7 @@ namespace design
 
             if (selectedCount < 3)
             {
-                MessageBox.Show(TestFirstWindowLocal.TestFirstWindowText);
+                MessageBox.Show("Выберите 3 объекта");
                 return;
             }
 
@@ -464,7 +481,7 @@ namespace design
                     listH.Add(ExistingRealty![9]);
                 }
                 GetRecommendation getRecommendation = new GetRecommendation(listH);
-                MainWindow mainWindow = new MainWindow(getRecommendation);
+                MainWindow mainWindow = new MainWindow(getRecommendation, Email!);
                 mainWindow.Show();
             }
 

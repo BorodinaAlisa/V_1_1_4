@@ -4,10 +4,18 @@ namespace design
 {
     public partial class TestFirstWindow : Form
     {
+        string? Email {  get; set; }
         public TestFirstWindow()
         {
             InitializeComponent();
             Design();
+
+        }
+        public TestFirstWindow(string email)
+        {
+            InitializeComponent();
+            Design();
+            Email = email;
         }
 
         public void Design()
@@ -30,7 +38,7 @@ namespace design
                 MessageBox.Show(TestFirstWindowLocal.TestFirstWindowText);
                 return;
             }
-            TestSecondWindow testSecondWindow = new TestSecondWindow(TownCombo.Text, RealtyCombo.Text, PurposeCombo.Text);
+            TestSecondWindow testSecondWindow = new TestSecondWindow(TownCombo.Text, RealtyCombo.Text, PurposeCombo.Text, Email!);
             testSecondWindow.Show();
 
         }
