@@ -40,7 +40,7 @@ namespace design
         public void FullListRecommendation(GetRecommendation getRecommendation)
         {
             var dictRecom = new Dictionary<int, decimal>();
-            using (var context = new ApplicationContex())
+            using (var context = new DB_993.Classes.ApplicationContex())
             {
                 var existingRealty = context.Realtys.ToList();
                 for (int i = 0; i < existingRealty.Count; i++)
@@ -54,7 +54,7 @@ namespace design
         }
         public bool CheckBlackList(List<int> sortList)
         {
-            using (var context = new ApplicationContex())
+            using (var context = new DB_993.Classes.ApplicationContex())
             {
                 var existingBl = context.BlackLists.FirstOrDefault(bl => bl.Id_Realty == sortList[I]);
                 return existingBl == null ? true : false;
@@ -73,7 +73,7 @@ namespace design
                 {
                     sortList.Add(pair.Key);
                 }
-                using (var context = new ApplicationContex())
+                using (var context = new DB_993.Classes.ApplicationContex())
                 {
                     if (CheckBlackList(sortList))
                     {

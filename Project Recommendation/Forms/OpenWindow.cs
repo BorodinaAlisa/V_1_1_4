@@ -7,7 +7,7 @@ namespace design
     {
         public OpenWindow()
         {
-            using (var applicationContex = new ApplicationContex())
+            using (var applicationContex = new DB_993.Classes.ApplicationContex())
             {
                 applicationContex.ApplicationContext();
             }
@@ -81,7 +81,7 @@ namespace design
                 return;
             }
             HashPassword heshPassword = new HashPassword();
-            using (var context = new ApplicationContex())
+            using (var context = new DB_993.Classes.ApplicationContex())
             {
                 var user = context.Users.FirstOrDefault(user => user.Email == LoginTextAutho.Text
                 && user.Password == heshPassword.GetPassword(PasswordTextAutho.Text));
