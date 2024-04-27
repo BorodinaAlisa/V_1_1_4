@@ -34,11 +34,9 @@
             ProfileButton = new Button();
             FavButton = new Button();
             BlackListButton = new Button();
-            MyListsButton = new Button();
             StraightButton = new Button();
             BackButton = new Button();
             FormMyRecommendationButton = new Button();
-            AddButton = new Button();
             EstimateButton = new Button();
             RealtyPhoto = new PictureBox();
             Price = new Label();
@@ -89,12 +87,6 @@
             BlackListButton.UseVisualStyleBackColor = true;
             BlackListButton.Click += BlackListButton_Click;
             // 
-            // MyListsButton
-            // 
-            resources.ApplyResources(MyListsButton, "MyListsButton");
-            MyListsButton.Name = "MyListsButton";
-            MyListsButton.UseVisualStyleBackColor = true;
-            // 
             // StraightButton
             // 
             resources.ApplyResources(StraightButton, "StraightButton");
@@ -117,13 +109,6 @@
             FormMyRecommendationButton.Name = "FormMyRecommendationButton";
             FormMyRecommendationButton.UseVisualStyleBackColor = false;
             FormMyRecommendationButton.Click += FormMyRecommendationButton_Click;
-            // 
-            // AddButton
-            // 
-            resources.ApplyResources(AddButton, "AddButton");
-            AddButton.Name = "AddButton";
-            AddButton.UseVisualStyleBackColor = true;
-            AddButton.Click += AddButton_Click;
             // 
             // EstimateButton
             // 
@@ -224,11 +209,9 @@
             Controls.Add(Price);
             Controls.Add(RealtyPhoto);
             Controls.Add(EstimateButton);
-            Controls.Add(AddButton);
             Controls.Add(FormMyRecommendationButton);
             Controls.Add(BackButton);
             Controls.Add(StraightButton);
-            Controls.Add(MyListsButton);
             Controls.Add(BlackListButton);
             Controls.Add(FavButton);
             Controls.Add(ProfileButton);
@@ -248,11 +231,9 @@
         private System.Windows.Forms.Button ProfileButton;
         private System.Windows.Forms.Button FavButton;
         private System.Windows.Forms.Button BlackListButton;
-        private System.Windows.Forms.Button MyListsButton;
         private System.Windows.Forms.Button StraightButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button FormMyRecommendationButton;
-        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button EstimateButton;
         private System.Windows.Forms.PictureBox RealtyPhoto;
         private System.Windows.Forms.Label Price;

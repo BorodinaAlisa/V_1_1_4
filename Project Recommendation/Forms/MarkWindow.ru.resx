@@ -9166,10 +9166,13 @@
         /pcaI1bsUQRTISGuGP8LW9C5fNnDcWsAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="Picture9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
   <data name="Star1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABvRJREFUeF7t3N1V40oQhdEJgRAIgRAIgQwgA8gAMrhkABlABoTgx4F5cQgOgVvH
+        EQAACxEBf2RfkQAABvRJREFUeF7t3N1V40oQhdEJgRAIgRAIgQwgA8gAMrhkABlABoTgx4F5cQgOgVvH
         0+URomRskGx19bfXquU/WUjuQyG3hX8BAAAASOnWamX1nri0f9pPJPefVRSArHVnhcSyd+Z+La2QWDTo
         mYtAJxcNeuYi0MlFg565CHRy0aBnLgKdXDTomYtAJxcNeuYi0MlFg/6hTk9Pw/t/UicnJ6Ovd8f1Eejk
         okFf1/X19ftyuXx/eXlZX97e3obL7VIK2+Xl5eb209PTev3dZb5bWvdisVhvp+ri4iJcrhSBTi4a9HUH
@@ -9201,6 +9204,10 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMh+/fof5s1M7ytd
         YWQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Star1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="Star1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 110</value>
@@ -9559,5 +9566,38 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Оцените</value>
+  </data>
+  <data name="SaveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="SaveButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="SaveButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 348</value>
+  </data>
+  <data name="SaveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 44</value>
+  </data>
+  <data name="SaveButton.Text" xml:space="preserve">
+    <value>СОХРАНИТЬ</value>
+  </data>
+  <data name="CancelButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CancelButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 348</value>
+  </data>
+  <data name="CancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 44</value>
+  </data>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>ОТМЕНИТЬ</value>
   </data>
 </root>

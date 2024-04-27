@@ -40,7 +40,9 @@
             Star33 = new Button();
             Star44 = new Button();
             Star55 = new Button();
-            label1 = new Label();
+            MarkLabel = new Label();
+            SaveButton = new Button();
+            CancelButton = new Button();
             ((System.ComponentModel.ISupportInitialize)Picture9).BeginInit();
             SuspendLayout();
             // 
@@ -115,18 +117,36 @@
             Star55.Name = "Star55";
             Star55.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // MarkLabel
             // 
-            resources.ApplyResources(label1, "label1");
-            label1.BackColor = Color.Transparent;
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Name = "label1";
+            resources.ApplyResources(MarkLabel, "MarkLabel");
+            MarkLabel.BackColor = Color.Transparent;
+            MarkLabel.ForeColor = Color.Transparent;
+            MarkLabel.Name = "MarkLabel";
+            // 
+            // SaveButton
+            // 
+            resources.ApplyResources(SaveButton, "SaveButton");
+            SaveButton.BackColor = Color.FloralWhite;
+            SaveButton.ForeColor = Color.DimGray;
+            SaveButton.Name = "SaveButton";
+            SaveButton.UseVisualStyleBackColor = false;
+            // 
+            // CancelButton
+            // 
+            resources.ApplyResources(CancelButton, "CancelButton");
+            CancelButton.BackColor = Color.FloralWhite;
+            CancelButton.ForeColor = Color.DimGray;
+            CancelButton.Name = "CancelButton";
+            CancelButton.UseVisualStyleBackColor = false;
             // 
             // MarkWindow
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label1);
+            Controls.Add(CancelButton);
+            Controls.Add(SaveButton);
+            Controls.Add(MarkLabel);
             Controls.Add(Star55);
             Controls.Add(Star44);
             Controls.Add(Star33);
@@ -158,6 +178,8 @@
         private Button Star33;
         private Button Star44;
         private Button Star55;
-        private Label label1;
+        private Label MarkLabel;
+        private Button SaveButton;
+        private Button CancelButton;
     }
 }

@@ -131,10 +131,6 @@ namespace design
             BlackListButton.BackColor = Color.Transparent;
             BlackListButton.FlatAppearance.BorderSize = 0;
             BlackListButton.FlatStyle = FlatStyle.Flat;
-            MyListsButton.Parent = Picture3;
-            MyListsButton.BackColor = Color.Transparent;
-            MyListsButton.FlatAppearance.BorderSize = 0;
-            MyListsButton.FlatStyle = FlatStyle.Flat;
             BackButton.Parent = Picture3;
             BackButton.BackColor = Color.Transparent;
             BackButton.FlatAppearance.BorderSize = 0;
@@ -143,10 +139,6 @@ namespace design
             StraightButton.BackColor = Color.Transparent;
             StraightButton.FlatAppearance.BorderSize = 0;
             StraightButton.FlatStyle = FlatStyle.Flat;
-            AddButton.Parent = Picture3;
-            AddButton.BackColor = Color.Transparent;
-            AddButton.FlatAppearance.BorderSize = 0;
-            AddButton.FlatStyle = FlatStyle.Flat;
             EstimateButton.Parent = Picture3;
             EstimateButton.BackColor = Color.Transparent;
             EstimateButton.FlatAppearance.BorderSize = 0;

@@ -61,7 +61,16 @@ namespace DB_993.Resourse {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на You already have this object in your favorites..
+        ///   Ищет локализованную строку, похожую на Очистить избранное.
+        /// </summary>
+        internal static string ClearFavoriteText {
+            get {
+                return ResourceManager.GetString("ClearFavoriteText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на У вас уже есть этот объект в избранном..
         /// </summary>
         internal static string FavoriteText {
             get {

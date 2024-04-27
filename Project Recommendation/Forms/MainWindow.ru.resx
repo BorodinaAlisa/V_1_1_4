@@ -17668,15 +17668,6 @@
         ZCliv42PccUAyIrpz/F03Cz4/wGmjd6QnTU9VQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 120</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 59</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>You might like it</value>
-  </data>
   <data name="ProfileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAYAAADn/TAIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -17705,9 +17696,6 @@
         Rgnq8pRQOBhGCerylFA4GEYJ6vKUUDgYRgnq8pRQOBjGEqQ3AJUwxVUfLt7S7wIAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANCMh4dfnHo7jXRdawkAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="ProfileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 28</value>
   </data>
   <data name="FavButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17738,9 +17726,6 @@
         iANFIA4UgThQhIr4F1P/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         M+Pm5n9mF2vGrExMOwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="FavButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 28</value>
   </data>
   <data name="BlackListButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17777,9 +17762,6 @@
         jDHGGGOMMcYYY4wxxhhjjDHGGGOMMcYYY4wxxhhjjDHGGGOMMcbswMnJH/ljgD3YXs7JAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="BlackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 28</value>
   </data>
   <data name="StraightButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17847,9 +17829,6 @@
         AAAAAAAAAAAAAAAAAAAAAEBrNjb+B5ugfVmRlfvtAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="FormMyRecommendationButton.Text" xml:space="preserve">
-    <value>FORM MY RECOMMENDATIONS</value>
-  </data>
   <data name="EstimateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -17882,29 +17861,7 @@
 </value>
   </data>
   <data name="EstimateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 804</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Price.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Price.Text" xml:space="preserve">
-    <value>Price:</value>
-  </data>
-  <data name="Square.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Square.Text" xml:space="preserve">
-    <value>Area:
-</value>
-  </data>
-  <data name="Address.Text" xml:space="preserve">
-    <value>Adress:
-</value>
-  </data>
-  <data name="AmountOfFloors.Text" xml:space="preserve">
-    <value>Number of floors:
-</value>
+    <value>373, 804</value>
   </data>
   <data name="AddFavButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17938,7 +17895,7 @@
 </value>
   </data>
   <data name="AddFavButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 804</value>
+    <value>455, 804</value>
   </data>
   <data name="AddBlackListButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17973,6 +17930,6 @@
 </value>
   </data>
   <data name="AddBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 804</value>
+    <value>290, 804</value>
   </data>
 </root>

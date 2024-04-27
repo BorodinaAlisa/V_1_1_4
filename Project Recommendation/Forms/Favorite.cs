@@ -25,22 +25,10 @@ namespace design
 
         private void Design()
         {
-            ProfileButton.Parent = Picture6;
-            ProfileButton.BackColor = Color.Transparent;
-            ProfileButton.FlatAppearance.BorderSize = 0;
-            ProfileButton.FlatStyle = FlatStyle.Flat;
-            FavButton.Parent = Picture6;
-            FavButton.BackColor = Color.Transparent;
-            FavButton.FlatAppearance.BorderSize = 0;
-            FavButton.FlatStyle = FlatStyle.Flat;
             BlackListButton.Parent = Picture6;
             BlackListButton.BackColor = Color.Transparent;
             BlackListButton.FlatAppearance.BorderSize = 0;
             BlackListButton.FlatStyle = FlatStyle.Flat;
-            MyListsButton.Parent = Picture6;
-            MyListsButton.BackColor = Color.Transparent;
-            MyListsButton.FlatAppearance.BorderSize = 0;
-            MyListsButton.FlatStyle = FlatStyle.Flat;
         }
 
         private void FillTableFavourites()
@@ -107,6 +95,12 @@ namespace design
                 }
 
             }
+        }
+
+        private void Favorite_Load(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(BlackListButton, FavoriteLocal.ClearFavoriteText);
         }
     }
 }

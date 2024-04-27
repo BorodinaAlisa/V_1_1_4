@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackList));
-            MyListsButton = new Button();
             BlackListButton = new Button();
-            FavButton = new Button();
-            ProfileButton = new Button();
             Picture6 = new PictureBox();
             listView1 = new ListView();
             PhotoList = new ColumnHeader();
@@ -41,16 +38,6 @@
             NameList = new ColumnHeader();
             ((System.ComponentModel.ISupportInitialize)Picture6).BeginInit();
             SuspendLayout();
-            // 
-            // MyListsButton
-            // 
-            MyListsButton.Image = (Image)resources.GetObject("MyListsButton.Image");
-            MyListsButton.Location = new Point(581, 13);
-            MyListsButton.Margin = new Padding(3, 4, 3, 4);
-            MyListsButton.Name = "MyListsButton";
-            MyListsButton.Size = new Size(58, 58);
-            MyListsButton.TabIndex = 16;
-            MyListsButton.UseVisualStyleBackColor = true;
             // 
             // BlackListButton
             // 
@@ -62,27 +49,6 @@
             BlackListButton.TabIndex = 15;
             BlackListButton.UseVisualStyleBackColor = true;
             BlackListButton.Click += BlackListButton_Click;
-            // 
-            // FavButton
-            // 
-            FavButton.Image = (Image)resources.GetObject("FavButton.Image");
-            FavButton.Location = new Point(247, 13);
-            FavButton.Margin = new Padding(3, 4, 3, 4);
-            FavButton.Name = "FavButton";
-            FavButton.Size = new Size(58, 58);
-            FavButton.TabIndex = 14;
-            FavButton.UseVisualStyleBackColor = true;
-            // 
-            // ProfileButton
-            // 
-            ProfileButton.FlatStyle = FlatStyle.Popup;
-            ProfileButton.Image = (Image)resources.GetObject("ProfileButton.Image");
-            ProfileButton.Location = new Point(149, 13);
-            ProfileButton.Margin = new Padding(3, 4, 3, 4);
-            ProfileButton.Name = "ProfileButton";
-            ProfileButton.Size = new Size(58, 58);
-            ProfileButton.TabIndex = 13;
-            ProfileButton.UseVisualStyleBackColor = true;
             // 
             // Picture6
             // 
@@ -133,10 +99,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(791, 846);
             Controls.Add(listView1);
-            Controls.Add(MyListsButton);
             Controls.Add(BlackListButton);
-            Controls.Add(FavButton);
-            Controls.Add(ProfileButton);
             Controls.Add(Picture6);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Margin = new Padding(3, 4, 3, 4);
@@ -146,11 +109,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button MyListsButton;
         private System.Windows.Forms.Button BlackListButton;
-        private System.Windows.Forms.Button FavButton;
-        private System.Windows.Forms.Button ProfileButton;
         private System.Windows.Forms.PictureBox Picture6;
         private ListView listView1;
         private ColumnHeader PhotoList;

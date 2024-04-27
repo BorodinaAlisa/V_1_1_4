@@ -19,8 +19,7 @@ namespace design
 
         public void Design()
         {
-            label1.Parent = Picture9;
-            label1.BackColor = Color.Transparent;
+            MarkLabel.BackColor = Color.Transparent;
             Star1.Parent = Picture9;
             Star1.BackColor = Color.Transparent;
             Star1.FlatAppearance.BorderSize = 0;
