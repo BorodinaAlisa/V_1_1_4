@@ -30,6 +30,7 @@ namespace design
             FullListRecommendation(getRecommendation);
             FillRecommendation();
         }
+
         public MainWindow(string email)
         {
             InitializeComponent();

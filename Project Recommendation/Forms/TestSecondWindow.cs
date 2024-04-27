@@ -40,7 +40,7 @@ namespace design
             RealtyCombo = realtyCombo;
             PurposeCombo = purposeCombo;
             FillPicture();
-        }
+        } 
 
         public void Design()
         {
@@ -430,7 +430,7 @@ namespace design
 
             if (selectedCount < 3)
             {
-                MessageBox.Show("Выберите 3 объекта");
+                MessageBox.Show(TestSecondWindowLocal.TestSecondWindowText);
                 return;
             }
 
